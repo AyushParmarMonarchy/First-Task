@@ -202,10 +202,11 @@ class LoginController extends Controller
 
     public function test()
     {
-        $hash = Hash::make('aYush@123');
-        // Session:: put('hash',$hash);
+        // $hash = Hash::make('aYush@123');
+        // // Session:: put('hash',$hash);
 
-        return $hash;
+        // return $hash;
+        return view('test.test')->with(['name'=>'Ayush Parmar']);
     }
 
     public function test2()
