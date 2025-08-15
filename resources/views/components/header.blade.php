@@ -17,6 +17,7 @@
             </div>
             <div class="header-link">
                 @if(auth()->check())
+                <div class="demo" id="demo" > </div>
                 <a href="{{ route('profile')}}">Profile </a>
                 <a href="{{ route('logout')}}" onclick="return confirm('confirm LogOut ?')">Log out </a>
                 @else
@@ -27,5 +28,44 @@
         </header>
     </div>
     {{ $slot }}
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<script>
+     async function time()
+    {
+        let min = 4 ;
+        let second = 60;
+
+        for ( let i = min ; i >= 0 ; i--)
+        {
+            for ( let j = second ; j >=0 ; j--)
+            {
+                $('#demo').text(i + ': ' + j );
+                // console.log(i + ": " + j);
+                await new Promise(resolve => setTimeout(resolve, 1000));
+            }
+            if(i == 0 )
+            {
+                $('#demo').text('Reload Page ');
+                console.log("Time Up");
+            }
+        }
+
+    }
+    $(document).ready(function()
+    {
+        if($('#demo').length)
+        {
+            time();
+            // alert('div');
+        }
+        else
+        {
+            // alert('not div');
+        }
+       
+    });
+</script>
 </body>
 </html>

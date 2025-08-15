@@ -55,3 +55,14 @@ body {
 .header-link a:hover {
     color: #38bdf8; /* light blue hover */
 }
+
+.demo{
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    height: 20px;           /* Set a height for vertical centering */
+    font-size: 15px;         /* Optional: adjust text size */
+    font-weight: bold;       /* Optional: bold text */
+    background-color: #f0f0f0; /* Optional: background color */
+    color: #1e293b;
+}

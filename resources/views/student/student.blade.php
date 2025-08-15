@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <x-header></x-header>
-        
+        <!-- <div class="demo" id="demo"></div> -->
 
         <div class="student-form">
             <form id="student-form" enctype="multipart/form-data">
@@ -156,6 +156,8 @@
 
 <!-- Your custom script -->
 <script>
+    
+
     function StudentLoad()
     {
         $.ajax({

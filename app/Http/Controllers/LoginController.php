@@ -21,8 +21,8 @@ class LoginController extends Controller
      */
     public function index()
     {
-        $time = session('login-time')->diffInMinutes(now());
-        echo $time ."<br>";
+        // $time = session('login-time')->diffInMinutes(now());
+        // echo $time ."<br>";
         // if(!session()->has('login'))
         // {
         //     echo 'Log Out';
