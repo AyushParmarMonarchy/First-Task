@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background: #7f8991;
+     */
+}
+
+/* Container */
+.cantant {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Make both same height */
+    gap: 2px;
+    padding: 40px;
+}
+
+/* Shared style for image and form box */
+.card-box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image box */
+.card-box.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Form box */
+.card-box.form-box {
+    padding: 30px 40px;
+}
+
+/* Input fields */
+.input-filed {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-filed input[type="text"],
+.input-filed input[type="date"],
+.input-filed input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+    background: transparent;
+    
+}
+
+.input-filed input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 5px rgba(56, 189, 248, 0.5);
+}
+
+.input-filed label {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background: white;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #555;
+    border-radius: 50%;
+}
+
+/* Gender section */
+.input-filed.gender {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-filed.gender label {
+    position: static;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.gender-options input {
+    margin-right: 5px;
+}
+
+.input-filed span {
+    color: red;
+    font-size: smaller;
+}
+
+/* Submit button */
+.submit {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.submit:hover {
+    background: #1d4ed8;
+}
+
+/* Last line */
+.last-line {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.last-line a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.last-line a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cantant {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-box {
+        width: 90%;
+    }
+
+    .card-box.image-box img {
+        height: auto;
+    }
+}
+/* //////////////////  */
+.show-forget {
+    display: flex;
+    justify-content: space-between; /* left & right */
+    align-items: center;
+    margin: 10px 0 20px 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+/* Show password section */
+.show label,
+.show {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #374151; /* dark gray */
+}
+
+/* Forgot password link */
+.forget a {
+    text-decoration: none;
+    color: #4e4f51; /* blue */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.forget a:hover {
+    color: #d2d5dc; /* darker blue */
+    text-decoration: none;
+}
+
+/* Checkbox style (optional, modern look) */
+.show input[type="checkbox"] {
+    accent-color: #2563eb; /* blue checkbox in modern browsers */
+}
+
+
+
+
+
+/* ////////////////////////////////// profile css //////////////////// */
+
+.user-data {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.user-field {
+    display: flex;
+    justify-content: space-between; /* left text, right text */
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e7eb; /* light gray line */
+}
+
+.user-field:last-child {
+    border-bottom: none; /* remove line on last item */
+}
+
+.user-field h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #374151; /* dark gray */
+    margin: 0;
+}
+
+.user-field h3 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #111827; /* almost black */
+    margin: 0;
+    text-align: right;
+}
+
+
+/* Edit button styling */
+.edit-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.edit-button a {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.edit-button a:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.error{
+    color: red;
+    font-size: smaller;
+    padding-bottom: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

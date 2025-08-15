@@ -1,0 +1,119 @@
+.student-form {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Two-column layout */
+.student-form form {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* For small screens */
+    position: relative;
+}
+
+/* Left and right columns */
+.left,
+.right {
+    flex: 1;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Vertical divider */
+.left {
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+.right {
+    padding-left: 20px;
+}
+
+/* Label styling */
+.input-filed label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #333;
+}
+
+/* Input, select, file styling */
+.input-filed input[type="text"],
+.input-filed input[type="email"],
+.input-filed input[type="date"],
+.input-filed input[type="file"],
+.input-filed select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    background: #f9f9f9;
+}
+
+.input-filed input:focus,
+.input-filed select:focus {
+    border-color: #0d6efd;
+    outline: none;
+    background: #fff;
+}
+
+/* Radio and checkbox inline */
+.radio,
+.checkbox {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.radio input,
+.checkbox input {
+    margin-right: 5px;
+}
+
+/* Horizontal line styling */
+.student-form hr {
+    width: 100%;
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Full-width submit button */
+.student-form input[type="submit"] {
+    width: 100%;
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.student-form input[type="submit"]:hover {
+    background: #0b5ed7;
+}
+
+
+.error{
+    color: red;
+    font-size: smaller;
+    padding-bottom: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.response{
+    height: 500px;
+    width: auto;
+    background-color: #0d6efd;
+}
