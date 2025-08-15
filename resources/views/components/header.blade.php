@@ -35,7 +35,7 @@
      async function time()
     {
         let min = 4 ;
-        let second = 60;
+        let second = 59;
 
         for ( let i = min ; i >= 0 ; i--)
         {
