@@ -37,7 +37,7 @@
             if(i == 0 )
             {
                 $('#demo').text('Time Up');
-                // console.log("Time Up");
+                console.log("Time Up");
             }
         }
 
